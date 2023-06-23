@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+    #a,#b,#c,#d,#e {
+      font-weight: bold;
+    }
+  </style>
+  <script>
+    function verificarRespuesta1() {
+      var respuesta1 = document.getElementById("respuesta1").value;
+      var a = document.getElementById("a");
+
+      if (respuesta1.toLowerCase() === "langest") {
+        a.innerHTML = "Respuesta correcta";
+        a.style.color = "green";
+      } else {
+        a.innerHTML = "Respuesta incorrecta";
+        a.style.color = "red";
+      }
+    }
+    function verificarRespuesta2() {
+      var respuesta2 = document.getElementById("respuesta2").value;
+      var b = document.getElementById("b");
+
+      if (respuesta2.toLowerCase() === "worst") {
+        b.innerHTML = "Respuesta correcta";
+        b.style.color = "green";
+      } else {
+        b.innerHTML = "Respuesta incorrecta";
+        b.style.color = "red";
+      }
+    }
+    function verificarRespuesta3() {
+      var respuesta3 = document.getElementById("respuesta3").value;
+      var c = document.getElementById("c");
+
+      if (respuesta3.toLowerCase() === "noisiest") {
+        c.innerHTML = "Respuesta correcta";
+        c.style.color = "green";
+      } else {
+        c.innerHTML = "Respuesta incorrecta";
+        c.style.color = "red";
+      }
+    }
+    function verificarRespuesta4() {
+      var respuesta4 = document.getElementById("respuesta4").value;
+      var d = document.getElementById("d");
+
+      if (respuesta4.toLowerCase() === "most popular") {
+        d.innerHTML = "Respuesta correcta";
+        d.style.color = "green";
+      } else {
+        d.innerHTML = "Respuesta incorrecta";
+        d.style.color = "red";
+      }
+    }
+function verificarRespuesta5() {
+      var respuesta5 = document.getElementById("respuesta5").value;
+      var e = document.getElementById("e");
+
+      if (respuesta5.toLowerCase() === "most difficult") {
+        e.innerHTML = "Respuesta correcta";
+        e.style.color = "green";
+      } else {
+        e.innerHTML = "Respuesta incorrecta";
+        e.style.color = "red";
+      }
+    }
+
+
+
+  </script>
+	<style>
+img.izquierda {float: left;}
+img.derecha {float: right;}
+</style>
+	<script type="text/javascript">
+  window.onload = function(){
+        document.getElementById("boton").addEventListener("click",sumar);
+        document.getElementById("boton1").addEventListener("click",sumar1);
+        document.getElementById("boton2").addEventListener("click",sumar2);
+    }
+</script>
+	<title></title>
+</head>
+<style>
+img.izquierda {float: left;}
+img.derecha {float: right;}
+	</style>
+<body>
+	<center>
+<p style="font-family:Franklin Gothic Medium Cond "><font color="#F4D03F" size="15">B</font><font color="#9AD32" size="15">L</font><font color="#2980B9" size="15">O</font><font color="#8A2BE2" size="15">C</font><font color="#FF1493" size="15">K  </font>
+	       <font color="#FF0000" size="15">  M</font><font color="#FFEA00" size="15">O</font><font color="#9AD32" size="15">N</font><font color="#00BFFF" size="15">K</font><font color="#8A2BE2" size="15">E</font><font color="#FF1493" size="15">Y</font></p>
+	    <p style="font-family:aharoni"><b><font color="#52BE80 "size="5" class="right">SUPERLATIVE</p>
+   
+</center>
+<img src="bot.jpg"  class="derecha" width="500" height="285" >
+<p style="font-family:aharoni"><b><font color="#E57373 "size="6.5" class="right">¿Que son los superlatives?</p>
+<p style="font-family:aharoni"><b><font color="#000000 "size="5" aling="right">El superlative sirve para describir un objeto o </p>
+<p style="font-family:aharoni"><b><font color="#000000 "size="5" aling="right">persona que está en el extremo superior o inferior,</p>
+<p style="font-family:aharoni"><b><font color="#000000 "size="5" aling="right">comparándolo con un grupo de objetos u otras personas.</p>
+	<br>
+<p align="left"style="font-family:aharoni"><b><font color="#E57373 "size="6">¿Como se forman los superlatives?</p>
+	<img src="e.jpg"  class="derecha" width="800" height="150" >
+<p align="left" style="font-family:aharoni"><b><font color="#000000 "size="5">Los superlativos en inglés se forman con el adjetivo en </p>
+<p align="left"style="font-family:aharoni"><b><font color="#000000 "size="5" >grado superlativo, esto es, aquellos terminados en –est, </p>
+<p align="left"style="font-family:aharoni"><b><font color="#000000 "size="5">que tienen la estructura adverbial the most/the least  </p>
+<p align="left"style="font-family:aharoni"><b><font color="#000000 "size="5">(el más/el menos)o los irregulares que cuentan con su </p>
+<p align="left"style="font-family:aharoni"><b><font color="#000000 "size="5" >propio grado superlativo,por ejemplo, the best</p>
+<p align="left"style="font-family:aharoni"><b><font color="#000000 "size="5">(el mejor) o the worst (el peor).</p>
+</center>
+
+<img src="5 ejem.jpg"  class="derecha" width="900" height="400" >
+<br>
+<br>
+<video align="left" src="Superlative Adjectives.mp4" width="500" height="300" autoplay controls></video>
+
+<br>
+<br>
+
+
+	<h2>Completa los ejercicios con un adjetivo superlativo</h2>
+
+  <h3>1. It is the_________shop in twon.(large)</h3>
+  <label for="respuesta1">Ingrese su respuesta:</label>
+  <input type="text" id="respuesta1" name="respuesta1" />
+  <button onclick="verificarRespuesta()">Verificar</button>
+  <p id="a" class="a"></p>
+
+
+  <h3>2.Monday is the_________day of the week.(bad)</h3>
+
+  <label for="respuesta2">Ingrese su respuesta:</label>
+  <input type="text" id="respuesta2" name="respuesta2" />
+
+  <button onclick="verificarRespuesta2()">Verificar</button>
+
+  <p id="b" class="b"></p>
+
+
+
+<h3>3.Ben was the_________person in his family.(noisy)</h3>
+
+  <label for="respuesta3">Ingrese su respuesta:</label>
+  <input type="text" id="respuesta3" name="respuesta3" />
+  <button onclick="verificarRespuesta3()">Verificar</button>
+
+  <p id="c" class="c"></p>
+
+
+
+
+<h3>4.Sam is the _________in the class.(popular)</h3>
+
+  <label for="respuesta4">Ingrese su respuesta:</label>
+  <input type="text" id="respuesta4" name="respuesta4" />
+  <button onclick="verificarRespuesta4()">Verificar</button>
+
+  <p id="d" class="d"></p>
+
+<h3>5.whitch is the _________ subject at school?.(difficult)</h3>
+
+  <label for="respuesta5">Ingrese su respuesta:</label>
+  <input type="text" id="respuesta5" name="respuesta5" />
+  <button onclick="verificarRespuesta5()">Verificar</button>
+
+  <p id="e" class="e"> </p>
+
+
+
+<br>
+<br>
+
+
+
+<video align="left" src="videoplayback.mp4" width="500" height="300" autoplay controls>
+	
+</video>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Verificar Respuesta</title>
+  <style>
+    .feedback {
+      font-weight: bold;
+    }
+  </style>
+  <script>
+    function verificarRespuesta() {
+      var uno = document.getElementById("correcta").value;
+      var feedback = document.getElementById("feedback");
+
+      if (uno.toLowerCase() === "yuri") {
+        feedback.innerHTML = "Respuesta correcta";
+        feedback.style.color = "green";
+      } else {
+        feedback.innerHTML = "Respuesta incorrecta";
+        feedback.style.color = "red";
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Verificar Respuesta</h1>
+
+  <label for="uno">Ingrese su respuesta:</label>
+  <input type="text" id="yuri" name="yuri" />
+
+  <br /><br />
+
+  <button onclick="verificarRespuesta()">Verificar</button>
+
+  <p id="feedback" class="feedback"></p>
+</body>
+</html>

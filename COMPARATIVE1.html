@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comparatives</title>
+    <link rel="icon" href="MELICY LOGO 2,0.png" type="image/png">
+
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .cover {
+            background-image: url('imagen-de-fondo.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .cover h1 {
+            font-size: 48px;
+            color: rgb(0, 0, 0);
+            margin-bottom: 20px;
+        }
+        
+        .cover p {
+            font-size: 24px;
+            color: rgb(0, 0, 0);
+            margin-bottom: 40px;
+        }
+        
+        .cover button {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            font-size: 90px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .verde{
+            color: rgb(188, 230, 120);font-size: 90px
+        }
+        .lila{
+            color: rgb(155, 123, 163);font-size: 90px
+        }
+        .lil{
+            color: rgb(210, 178, 218);font-size: 40px
+        }
+        .naranja{
+            color: rgb(224, 164, 86);font-size: 90px
+        }
+        .amarillo{
+            color: rgb(214, 216, 94);font-size: 90px
+        }
+         .morado{
+            color: rgb(76, 67, 112);font-size: 90px
+        }
+        .oo{
+            color: rgb(76, 67, 112);font-size: 15px
+        }
+         .aa{
+            color:#800080;font-size: 13px
+        }
+        .azul{
+            color: rgb(89, 207, 211);font-size: 90px
+        }
+        .rosa{
+            color: rgb(230, 146, 233);font-size: 100px
+        }
+        .ros{
+            color: rgb(215, 29, 221);font-size: 30px
+        }
+        .negro{
+            color: black;font-size: 20px
+        }
+        .img{
+            float: left;
+            margin-left: 10px;
+        }
+
+        .imge{
+            float: right;
+            margin-right: 20px;
+        }
+        .image{
+            float: center;
+            margin-right: 20px;
+        }
+        table {
+      border-collapse: collapse;
+      width: 600px;
+    }
+    td {
+      width: 30px;
+      height: 30px;
+      border: 1px solid black;
+      text-align: center;
+      cursor: pointer;
+    }
+    .selected {
+      background-color: rgb(179, 141, 187);
+    }
+    </style>
+    <script>
+        window.onload = function() {
+          var cells = document.getElementsByTagName("td");
+          for (var i = 0; i < cells.length; i++) {
+            cells[i].addEventListener("click", function() {
+              var word = "";
+              var cell = this;
+              while (cell) {
+                word += cell.textContent;
+                cell = cell.nextElementSibling;
+              }
+              cell = this.previousElementSibling;
+              while (cell) {
+                word = cell.textContent + word;
+                cell = cell.previousElementSibling;
+              }
+             
+              this.classList.add("selected");
+            });
+          }
+        };
+         function verificarRespuesta1() {
+      var respuesta1 = document.getElementById("respuesta1").value;
+      var feedback = document.getElementById("feedback");
+
+      if (respuesta1.toLowerCase() === "thinner") {
+        feedback.innerHTML = "Respuesta correcta";
+        feedback.style.color = "green";
+      } else {
+        feedback.innerHTML = "Respuesta incorrecta";
+        feedback.style.color = "red";
+      }
+    }
+    //-----------------------------------------------------------------
+    function verificarRespuesta2() {
+     var respuesta2 = document.getElementById("respuesta2").value;
+      var dos = document.getElementById("dos");
+
+      if (respuesta2.toLowerCase() === "taller") {
+        dos.innerHTML = "Respuesta correcta";
+        dos.style.color = "green";
+      } else {
+        dos.innerHTML = "Respuesta incorrecta";
+        dos.style.color = "red";
+      }}
+      //----------------------------------------------------------
+    function verificarRespuesta3() {
+     var respuesta3 = document.getElementById("respuesta3").value;
+      var tres = document.getElementById("tres");
+
+      if (respuesta3.toLowerCase() === "attractiver") {
+        tres.innerHTML = "Respuesta correcta";
+        tres.style.color = "green";
+      } else {
+        tres.innerHTML = "Respuesta incorrecta";
+        tres.style.color = "red";
+      }}
+      //----------------------------------------------------------
+    
+      </script>
+</head>
+<body>
+   <center><img src="MELICY LOGO 2,0.png"alt="imagen" width="90" height="90" class="img" > 
+            
+    <p> <span class="verde">B</span>
+     <span class="lila">L</span>
+     <span class="naranja">O</span>
+     <span class="amarillo">C</span>
+     <span class="morado">K</span>
+     <span class="azul">M</span>
+     <span class="rosa">O</span>
+     <span class="verde">N</span>
+     <span class="lila">K</span>
+     <span class="naranja">E</span>
+     <span class="amarillo">Y</span>
+
+  <p class="lil">COMPARATIVE</p></center><img src="botas2.png"alt="imagen" width="400" height="400" class="imge" > 
+  <P class="ros"> ¿QUE SON LOS COMPARATIVES?</P>
+  <P class="negro">Los adjetivos en grado comparativo<br><br>
+  Los comparativos se utilizan para resaltar caracteristicas de  2 personas, animales, cosas, lugares, entre otros. Lo primero que necesitamos es saber que hacemos referencia cuando hablamos de comparacion.<br>
+  <p class="oo">Comparatives are used to highlight characteristics of 2 people, animals, things, places, among others. The first thing we need is to know what we are referring to when we talk about comparison.</p>
+
+ <P class="negro"> Se emplea en oraciones donde comparamos dos nombres, de la manera siguiente:<br><br>
+ 
+ <img src="notas.png"alt="imagen" width="300" height="300" class="img" > <P class="ros"> ESTRUCTURA</P>
+<P class="negro">
+  Nombre (sujeto) + verbo + adjetivo en grado comparativo + than + nombre (objeto).<br><br><br><br><br><br><br><br><br>
+ <video width="700" height="500" controls autoplay muted class="img" ><source src="comp.mp4" type="video/mp4" ></video> <P class="ros"> REGLAS GRAMATICALES</P>
+  <P class="negro"><br>
+  - Se agrega el adjetivo "er" o "r" si ya termino en "e"<p class="oo"> small - smaller.</p>
+  - Si la palabra termina en vocal+consonante se duplica la constante.<p class="oo"> big - bigger.</p>
+  - Si termina en "y"se cambia por "ier"<p class="oo"> happy - happier.</p>
+  -Para comparar 2 objetos en una misma oracion se agrega "than".
+        <p>    <li>This shirt is smaller than that shirt.</li><P class="oo">Esta camisa es más pequeña que esa camisa.</P></p>
+        <p>    <li>This dog is bigger than that cat.</li><P class="oo">Este perro es más grande que ese gato.</P></p>
+<P class="img"><br><br>
+    <br><br><br><br><br><br><br><br>
+ <P class="ros"> EJEMPLOS</P><P class="negro">
+ 1.-My house is  <span class="aa">langer</span> than hers.<br>
+ 2.-This box is  <span class="aa">smaller</span> than the one lost.<br>
+ 3.-you dog runs  <span class="aa">faster</span> than jim's dog.<br>
+ 4.-the rock flew  <span class="aa">higher</span> than the roof.<br>
+ 5.-jim and jack are both my friends, but i like jack <span class="aa">better</span><br></P>
+  <P class="ros"> EJERCICIOS</P><P class="negro">   <video width="500" height="300" controls autoplay muted class="imge" ><source src="cancion1.mp4" type="video/mp4" ></video>
+  1.- <label for="respuesta1">yuri is</label>
+  <input type="text" id="respuesta1" name="respuesta1" />than litza.(thin)
+
+  <br /><br />
+
+  <button onclick="verificarRespuesta1()">start</button>
+
+  <p id="feedback" class="feedback"> </p>
+
+  2.- <label for="respuesta2">cami is</label>
+  <input type="text" id="respuesta2" name="respuesta2" />than santhiago.(tall)
+
+  <br /><br />
+
+  <button onclick="verificarRespuesta2()">start</button>
+
+  <p id="dos" class="dos"> </p>
+
+  3.-<label for="respuesta3">My boyfriend is</label>
+  <input type="text" id="respuesta3" name="respuesta3" />than boyfriend of my sister.(attractive)
+
+  <br /><br />
+
+  <button onclick="verificarRespuesta3()">start</button>
+
+  <p id="tres" class="tres"> </p>
+
+ <div class="container"  class="imge"><P class="negro">
+    <br><br>
+    <h2>selecciona los que ya encontraste</h2>
+    
+    <P class="img"><form> 
+        <div class="options">
+            <label><input type="checkbox" name="opcion1" value="opcion1"> OLDER</label>
+            <label><input type="checkbox" name="opcion2" value="opcion2"> CLEANER </label>
+            <label><input type="checkbox" name="opcion3" value="opcion3"> SHOWER </label> 
+            <label><input type="checkbox" name="opcion1" value="opcion1"> larger</label>
+            <label><input type="checkbox" name="opcion2" value="opcion2"> smaller</label>
+            <label><input type="checkbox" name="opcion3" value="opcion3"> faster</label> 
+            <label><input type="checkbox" name="opcion3" value="opcion3"> heigher</label> 
+
+        </div>
+        </form>
+
+    <table>
+    <tr>
+      <td>o</td>  <td>l</td>  <td>d</td>  <td>e</td><td>r</td>  <td>d</td>  <td>s</td> <td>g</td> <td>h</td>  <td>c</td>
+    </tr>
+    
+    <tr>
+      <td>e</td><td>r</td>  <td>d</td>  <td>s</td> <td>g</td> <td>h</td>  <td>c</td> <td>d</td>  <td>s</td>  <td>l</td>
+    </tr>
+    
+    <tr>
+      <td>s</td>  <td>h</td>  <td>o</td>  <td>w</td><td>e</td>  <td>r</td> <td>g</td> <td>h</td>  <td>c</td>  <td>e</td>
+    </tr>
+    
+    <tr>
+      <td>g</td>  <td>v</td>  <td>e</td>   <td>d</td>  <td>s</td> <td>g</td> <td>h</td>  <td>c</td><td>s</td>    <td>a</td>
+    </tr>
+    
+    <tr>
+      <td>t</td>  <td>l</td>  <td>r</td>  <td>i</td><td>e</td>  <td>w</td>   <td>q</td> <td>u</td><td>m</td>  <td>n</td>
+    </tr>
+    
+    <tr>
+      <td>y</td>  <td>u</td>  <td>a</td>  <td>i</td><td>g</td>  <td>o</td>   <td>p</td> <td>a</td><td>a</td>  <td>e</td>
+    </tr>
+    
+    <tr>
+      <td>s</td>  <td>d</td>  <td>f</td>  <td>n</td><td>g</td>  <td>h</td>  <td>h</td>  <td>j</td><td>l</td>  <td>r</td>
+    </tr>
+    
+    <tr>
+      <td>i</td>  <td>k</td>  <td>ñ</td>  <td>l</td><td>g</td>  <td>z</td>  <td>e</td><td>x</td> <td>l</td>   <td>v</td>
+    </tr>
+    <tr>
+       <td>h</td>  <td>o</td>  <td>w</td><td>e</td>  <td>r</td>   <td>e</td>  <td>e</td>  <td>r</td><td>e</td>  <td></td>
+    </tr>
+    <tr>
+        <td>g</td>  <td>z</td>  <td>e</td><td>x</td> <td>r</td> <td>g</td> <td>r</td>  <td>t</td><td>e</td>  <td>r</td>
+    </tr>
+    <tr>
+      <td>f</td>  <td>a</td>  <td>s</td>  <td>t</td><td>e</td>  <td>r</td>  <td>g</td>  <td>z</td>  <td>e</td><td>x</td> 
+    </tr>
+
+
+</table>
+     
+</body>
+</html>
